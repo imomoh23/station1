@@ -154,7 +154,7 @@ resource "aws_instance" "ec2_instance" {
     ]
   }
 }
-# print the url of the container
+# print the url of the ec2 instance
 output "container_url" {
  value = ["${aws_instance.ec2_instance.*.public_ip}"]
 }
