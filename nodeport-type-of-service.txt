@@ -35,9 +35,10 @@ The Label of the Pod is ‘nginx-app’ as highlighted in the labels section, th
 
 To deploy the above nginx deployment you need to give the command –
 kubectl create -f nginx-deploy.yaml
-To view the Deployment and the Pod created by this deployment you can give the below commands –
+To view the Deployment, the Pod or the replicaset created by this deployment you can give the below commands –
 kubectl get deploy
 kubectl get pods
+kubectl get replicaset
 
 Step 2:
 Create a YAML file for the NodePort Service
