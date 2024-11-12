@@ -1,10 +1,10 @@
-Step 1: Create a YAML file for Nginx Deployment
+Step 1: Create a YAML file for Nginx Deployment: 
+
 To start, connect to the master ec2 instance via SSH as the root user.
 You need to create a YAML file for Deploying the web application which will be further exposed using NodePort service.
 Name of the YAML file –nginx-deploy.yaml
-The content of the YAML files is shown below 
 vi deployment.yaml
-cat > nginx-deploy.yaml << EOF
+The content of the YAML files is shown below 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -26,8 +26,8 @@ spec:
         image: nginx:1.7.9
         ports:
         - containerPort: 80
-EOF
-
+to apply:
+kubectl apply -f deployment.yaml
 
 In the above manifest file,the name of the Deployment is ‘nginx-deployment’ as highlighted under name section.
 The Deployments is creating one replica of nginx-container image 1.7.9 as highlighted in the replicas and containers section respectively.
