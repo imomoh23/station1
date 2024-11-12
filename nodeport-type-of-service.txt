@@ -40,7 +40,7 @@ kubectl get deploy
 kubectl get pods
 kubectl get replicaset
 
-Step 2:
+Step 2: vi service.yaml
 Create a YAML file for the NodePort Service
 You need to create a YAML file for creating the NodePort service.
 Name of the YAML file –nginx-service-sample.yaml
@@ -61,7 +61,9 @@ spec:
     port: 80
     targetPort: 80
 EOF
-
+save
+kubectl apply -f service.yaml
+to check: kubectl get svc
 In the above manifest file, the name of the NodePort service is ‘nodeport-service’ as mentioned in the name section of metadata highlighted.
 In the selector section the same Pod label is mentioned which was given while deploying the nginx deployment in the previous step which is ‘nginx-app’.
 The Nginx application is being exposed on the port 31111 as mentioned in the node Port section as highlighted.
