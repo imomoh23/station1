@@ -28,13 +28,14 @@ kubectl get configmaps <configmap-name> -o yaml
 This will display the contents and details of the configmap mentioned.
 
 Creating a Pod and consuming the configmap created –
-Step 1– vi demopod.yaml
-copy, paste and edit from pod kubernetes documentation (add configmap data to a specific path in the volume) 
-Creating Pod Manifest file –
 You will need to create a Pod Manifest file (.yaml file) using which a nginx Pod application will be deployed and inside the manifest file you need to configure the Pod to use the configmap created. 
 The manifest file will have the below specifications –
 #nginx-pod-demo-configmap.yaml
 vi nginx-pod-demo-configmap.yaml
+
+Step 1– vi demopod.yaml
+copy, paste and edit from pod kubernetes documentation (add configmap data to a specific path in the volume) 
+Creating Pod Manifest file –
 
 apiVersion: v1
 kind: Pod
