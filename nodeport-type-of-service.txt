@@ -3,7 +3,7 @@ To start, connect to the master ec2 instance via SSH as the root user.
 You need to create a YAML file for Deploying the web application which will be further exposed using NodePort service.
 Name of the YAML file –nginx-deploy.yaml
 The content of the YAML files is shown below 
-
+vi deployment.yaml
 cat > nginx-deploy.yaml << EOF
 apiVersion: apps/v1
 kind: Deployment
