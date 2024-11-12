@@ -59,6 +59,10 @@ spec:
           path: test_file_2.txt
 
 save it
+To apply and create file use: kubectl apply -f demopod.yaml 
+(to check it, run: kubectl get pod
+if you want to check the config map inside the pod, you will exec
+to exec: kubectl exec nginx-pod-demo-configmap -- cat /etc/config-map-data/test_file_1.txt)
 
 You need to create a YAML file with the above content. In the ConfigMap section highlighted you need to mention the name of the config that was created in the earlier steps. Mount Path is the location inside the Pod where the configmap will be stored.
  Here the name of the YAML file to be created is nginx-pod-demo-configmap.yaml
