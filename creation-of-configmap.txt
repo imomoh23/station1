@@ -11,7 +11,7 @@ Step 2– Creating the configmap–
 Now you can create the configmap using the 2 files created in the previous step by giving the below command–
 
 kubectl create configmap demo-configmap --from-file=test_file_1.txt --from-file=test_file_2.txt
-
+for example: kubectl create configmap democonfigmap --from-file=test_file_1.txt --from-file=test_file_2.txt
 Command Syntax –
 kubectl create configmap <configmap-name> --from-file=<file-path/file-name>
 You can verify that the configmap got created by giving the below command –
