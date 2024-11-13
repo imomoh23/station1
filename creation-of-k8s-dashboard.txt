@@ -12,7 +12,7 @@ Create Kubernetes dashboard namespace
 kubectl create namespace kubernetes-dashboard
 
  Create a  Service Account – kubernetes- dashboard
-vi kubernetes-dashboard.yml
+vi kubernetes-dashboard.yaml
 
 apiVersion: v1
 kind: ServiceAccount
