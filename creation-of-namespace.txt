@@ -1,18 +1,4 @@
-Demonstration on Namespaces
-create namespace: kubectl create namespace (name of namespace)
-create a service account: vi sa.yaml
-copy and paste
-
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: admin-user
-  namespace: kubernetes-dashboard
-then apply: kubectl apply -f sa.yaml
-
-create a cluster role binding
-vi crb.yaml
-
+Demonstration on Namespaces declarative
 How to create a namespace in the cluster and create pods under it.
 Step 1 –
 View all the Namespaces
