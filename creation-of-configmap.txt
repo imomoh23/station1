@@ -15,7 +15,8 @@ for example: kubectl create configmap democonfigmap --from-file=test_file_1.txt 
 Command Syntax –
 kubectl create configmap <configmap-name> --from-file=<file-path/file-name>
 You can verify that the configmap got created by giving the below command –
-kubectl get configmaps
+kubectl get configmaps (imperative)
+for example kubectl get cm  democonfigmap -o yaml (declaratively)
 
 This will display the configmaps created with the name provided during creation.
 
