@@ -33,7 +33,7 @@ To Verify that the new custom namespace got created you can give the give the co
 kubectl get namespaces
 
 Step 3–
-Deploying a Pod under the custom namespace created
+Deploying a Pod under the custom namespace created imperatively
 You can create Kubernetes resources under the namespace created in the previous step.
  The below command creates a Pod under the custom namespace created in the previous step.
 kubectl run ns-pod --image=nginx --port=80 -n demonamespace
